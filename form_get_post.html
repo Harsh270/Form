@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FORM</title>
+	<style>
+		
+		.form{
+    background: white;
+    width: 750px;
+    position: absolute;
+    left:20%;
+    right:12%;
+    top: 15%;
+    border-radius: 7px;
+    box-shadow: 10px 10px 200px 00px gray;
+    font-size: 18px;
+}
+		
+		.nav{height:10%;
+			background:white;
+			box-shadow:10px 10px 20px 00px gray;
+			border-radius:3px}
+		a{text-decoration: none;
+		  color:black;
+		  }
+		#tdn:hover{;
+			border:0px solid #FF6600;
+			border-radius:4px;
+		        background:#FF6600;
+		        transition-duration:.8s;
+		        transition-timing-function:ease-in-out;}
+		#tdn{border:none;}
+		#tdinput{border:1.5px solid gray;
+		         border-radius:8px}
+		#tdinput1{border:1.5px solid gray;
+		         border-radius:8px}
+		#tdinput1:hover{background-color:steelblue;
+		                transition-duration:.8s;}
+		#input1{border:none;
+		        width:100%;
+		        background:none;
+		       text-decoration:none;
+		       outline:none;}
+	</style>
+</head>
+
+<body background="https://bebs.org/wp-content/uploads/2019/05/form-background-1024x683.jpg">
+	<div class="form">
+<table width="635" height="371" align="center">
+	
+	<form action="resp.php" method="post">
+	  <tbody>
+	    <tr>
+	      <td height="81" colspan="3" align="center" style="color: hsla(0,0%,0%,1); font-size: 25px;">USER REGISTRACTION FORM</td>
+        </tr>
+	    <tr>
+			
+	      <td width="28" rowspan="7">&nbsp;</td>
+	      <div class="text">
+	        <td height="60" id="tdinput">
+	          
+	          <label>USERNAME:<br><br></label>
+				
+	            <input id="input1" name="t1" type="text"  placeholder="ENTER YOUR NAME HERE ">
+            
+            </td>
+	        </div>
+	      <td width="24">&nbsp;</td>
+			
+        </tr>
+	    <tr>
+	      <td id="tdinput"><label >PASSWORD:<br>
+	        <br>
+	        </label>
+          <input id="input1" type="password" name="t2" placeholder="ENTER YOUR PASSWORD HERE"
+				 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td id="tdinput">DOB:<br><br>
+          
+            <input id="input1" type="date" name="t3" placeholder="SELECT YOUR DATE">
+         </td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td id="tdinput">EMAIL:<br>
+			  <br>
+           <input id="input1" type="email" name="t4" placeholder="ENTER YOUR MAIL HERE" pattern=".+@gmail.com">
+          </td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td id="tdinput">PHONE NUMBER:<br><br>
+          
+            <input id="input1" type="tel" name="t5" placeholder="ENTER YOUR NUMBER HERE" 
+				   pattern="[0-9]{10}" title="plz enter a valid phone no ">
+          
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td id="tdinput">QUALIFICATION:<br><br>
+            <label for="select">Select:</label>
+            <select name="t6" id="input1">
+				<option>10th</option>
+				<option>12th</option>
+				<option>MCA</option>
+				<option>MBA</option>
+				<option>M.TECH</option>
+				<option>Ph.d</option>
+            </select>
+          </td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td id=tdinput>GENDER:<br><br>
+            <label>
+              <input type="radio" name="RadioGroup1" value="radio" >
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MALE</label>
+            <br>
+            <label>
+              <input type="radio" name="RadioGroup1" value="radio" >
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FEMALE</label>
+          </td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td>&nbsp;</td>
+	      <td id="tdinput" >ADDRESS:<br><br>
+	       
+	          <textarea id="input1" name="t7"  placeholder="ENTER YOUR ADDRESS HERE"></textarea>
+	        
+            </td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td>&nbsp;</td>
+	      <td id="tdinput1"><input id="input1" type="submit" name="submit"  value="Submit"></td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td>&nbsp;</td>
+	      <td id="tdinput1" ><input type="reset" name="reset" id="input1" value="Reset"></td>
+	      <td>&nbsp;</td>
+        </tr>
+      </tbody>
+		</form>
+	
+</table>
+
+	</div>
+	<div class="nav">
+<table width="699" align="center">
+	  <tbody>
+	    <tr>
+	      <td id="tdn" width="120" align="center" style="font-size: 22px"><a href="#">HOME</a></td>
+	      <td id="tdn" width="164" align="center" style="font-size: 22px"><a href="tech.html"> TECHNOLOGY</a</td>
+	      <td id="tdn" width="142" align="center" style="font-size: 22px"><a href="#">CONTACT US </a></td>
+	      <td id="tdn" width="130" align="center" style="font-size: 24px"><a href="#">ABOUT US </a></td>
+        </tr>
+      </tbody>
+</table>
+		</div>
+</body>
+</html>
